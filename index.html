@@ -190,7 +190,7 @@
     transition:width .2s linear;
   }
 
-  .session-body{ flex:1; display:flex; flex-direction:column; align-items:center; text-align:center; justify-content:center; gap:14px; }
+  .session-body{ flex:1; display:flex; flex-direction:column; align-items:center; text-align:center; justify-content:flex-start; gap:14px; overflow-y:auto; padding-top:4vh; min-height:0; }
   .session-eyebrow{ color:var(--gold-deep); letter-spacing:.14em; text-transform:uppercase; font-size:12px; font-weight:700; }
   .session-title{ font-family:var(--serif); font-size:36px; color:var(--text); }
   .session-subtitle{ color:var(--text-dim); font-size:15px; max-width:320px; }
@@ -217,7 +217,7 @@
     padding:12px; font-family:var(--serif); font-size:16.5px; color:var(--text);
   }
   .affirm-scroll{
-    margin-top:8px; max-height:50vh; overflow-y:auto; width:100%; text-align:left;
+    margin-top:8px; max-height:42vh; overflow-y:auto; width:100%; text-align:left;
     display:flex; flex-direction:column; gap:12px; padding-right:4px;
   }
   .affirm-line{
@@ -226,7 +226,7 @@
   }
   .affirm-line strong{ color:var(--gold-deep); font-weight:600; font-style:normal; }
 
-  .session-controls{ display:flex; gap:12px; margin-top:22px; }
+  .session-controls{ display:flex; gap:12px; margin-top:22px; flex-shrink:0; }
   .session-controls button{ flex:1; padding:15px; border-radius:var(--radius-md); font-weight:700; font-family:var(--sans); font-size:15px; cursor:pointer; }
   .btn-pause{ background:var(--bg-card); border:1px solid var(--border); color:var(--text); }
   .btn-next{ background:var(--gold); border:none; color:var(--on-gold); }
@@ -501,7 +501,7 @@
             { letter:"S", name:"Silence",       subtitle:"Prayer",                              duration:300,  type:"timer",       instructions:"Sit quietly. Breathe. Bring your requests and your gratitude before God." },
             { letter:"A", name:"Affirmations",  subtitle:"Speak truth over your life",           duration:300,  type:"affirmations" },
             { letter:"V", name:"Visualisation", subtitle:"See your goals take shape",              duration:300,  type:"timer",       instructions:"Picture today going well \u2014 the conversations, the work, the way you want to show up.", link:{label:"Open Goals", useGoalsUrl:true} },
-            { letter:"E", name:"Exercise",      subtitle:"Move your body",                        duration:1200, type:"timer",       instructions:"Twenty minutes of movement. Walk, stretch, train \u2014 get the blood moving.", link:{label:"Open Workout Program", url:"https://asbfmckay.github.io/workout-app/"} },
+            { letter:"E", name:"Exercise",      subtitle:"Move your body",                        duration:1200, type:"timer",       instructions:"Twenty minutes of movement. Walk, stretch, train \u2014 get the blood moving.", link:{label:"Open Workout Program", url:"https://asbfmckay.github.io/xbx-workout/"} },
             { letter:"R", name:"Reading",       subtitle:"Feed your mind",                        duration:1200, type:"timer",       instructions:"Twenty minutes with a book that's building you up.", link:{label:"Reading Program", comingSoon:true} },
             { letter:"S", name:"Scribing",      subtitle:"Impressions",                           duration:300,  type:"timer",       instructions:"Write what's on your mind, what you're grateful for, and what you're aiming at today." }
           ]
@@ -512,7 +512,7 @@
             { letter:"S", name:"Silence",       subtitle:"Prayer",                              duration:60,  type:"timer",       instructions:"One minute. Breathe. Bring your requests and your gratitude before God." },
             { letter:"A", name:"Affirmations",  subtitle:"Speak truth over your life",           duration:60,  type:"affirmations" },
             { letter:"V", name:"Visualisation", subtitle:"See your goals take shape",              duration:60,  type:"timer",       instructions:"One minute. Picture today going well.", link:{label:"Open Goals", useGoalsUrl:true} },
-            { letter:"E", name:"Exercise",      subtitle:"20 push-ups \u00b7 20 sit-ups \u00b7 20 dips", duration:300, type:"list", instructions:["20x Push-ups","20x Sit-ups","20x Dips"], link:{label:"Open Workout Program", url:"https://asbfmckay.github.io/workout-app/"} },
+            { letter:"E", name:"Exercise",      subtitle:"20 push-ups \u00b7 20 sit-ups \u00b7 20 dips", duration:300, type:"list", instructions:["20x Push-ups","20x Sit-ups","20x Dips"], link:{label:"Open Workout Program", url:"https://asbfmckay.github.io/xbx-workout/"} },
             { letter:"R", name:"Reading",       subtitle:"Feed your mind",                        duration:60,  type:"timer",       instructions:"One minute with a book that's building you up.", link:{label:"Reading Program", comingSoon:true} },
             { letter:"S", name:"Scribing",      subtitle:"Impressions",                           duration:60,  type:"timer",       instructions:"One minute. Write one thing you're grateful for and one aim for today." }
           ]
